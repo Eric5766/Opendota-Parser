@@ -162,7 +162,7 @@ def get_player_ids() -> List[str]:
 def get_config() -> tuple[List[str], int, int]:
     player_ids = get_player_ids()
     hours_threshold = int(os.getenv('HOURS_THRESHOLD', '24'))
-    check_interval = int(os.getenv('CHECK_INTERVAL', '1800'))
+    check_interval = int(os.getenv('CHECK_INTERVAL', '1200'))
     
     return player_ids, hours_threshold, check_interval
 
